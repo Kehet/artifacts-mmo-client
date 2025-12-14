@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**results** | [**\\Kehet\ArtifactsMMO\\Model\CombatResultSchema[]**](CombatResultSchema.md) | Results from each combat iteration. |
+**results** | [**\Kehet\ArtifactsMMO\Model\CombatResultSchema[]**](CombatResultSchema.md) | Results from each combat iteration. |
 **wins** | **int** | Total number of victories. |
 **losses** | **int** | Total number of defeats. |
 **winrate** | **float** | Win rate percentage (0-100). |

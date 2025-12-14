@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **code** | **string** | Code of the achievement. |
 **description** | **string** | Description of the achievement. |
 **points** | **int** | Points of the achievement. Used for the leaderboard. |
-**type** | [**\\Kehet\ArtifactsMMO\\Model\AchievementType**](AchievementType.md) | Type of achievement. |
+**type** | [**\Kehet\ArtifactsMMO\Model\AchievementType**](AchievementType.md) | Type of achievement. |
 **target** | **string** | Target of the achievement. | [optional]
 **total** | **int** | Total to do. |
-**rewards** | [**\\Kehet\ArtifactsMMO\\Model\AchievementRewardsSchema**](AchievementRewardsSchema.md) | Rewards. |
+**rewards** | [**\Kehet\ArtifactsMMO\Model\AchievementRewardsSchema**](AchievementRewardsSchema.md) | Rewards. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\\Kehet\ArtifactsMMO\\Model\GEOrderSchema[]**](GEOrderSchema.md) |  |
+**data** | [**\Kehet\ArtifactsMMO\Model\GEOrderSchema[]**](GEOrderSchema.md) |  |
 **total** | **int** |  | [optional]
 **page** | **int** |  | [optional]
 **size** | **int** |  | [optional]

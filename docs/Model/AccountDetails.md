@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **username** | **string** | Username. |
 **member** | **bool** | Member status. |
-**status** | [**\\Kehet\ArtifactsMMO\\Model\AccountStatus**](AccountStatus.md) | Account status. |
+**status** | [**\Kehet\ArtifactsMMO\Model\AccountStatus**](AccountStatus.md) | Account status. |
 **badges** | **string[]** | Account badges. | [optional]
 **skins** | **string[]** | Skins owned. |
 **achievements_points** | **int** | Achievement points. |

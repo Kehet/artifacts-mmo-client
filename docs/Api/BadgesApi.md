@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\BadgesApi
+# Kehet\ArtifactsMMO\BadgesApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllBadgesBadgesGet()`
 
 ```php
-getAllBadgesBadgesGet($page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageBadgeSchema
+getAllBadgesBadgesGet($page, $size): \Kehet\ArtifactsMMO\Model\DataPageBadgeSchema
 ```
 
 Get All Badges
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\BadgesApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\BadgesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageBadgeSchema**](../Model/DataPageBadgeSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageBadgeSchema**](../Model/DataPageBadgeSchema.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `getBadgeBadgesCodeGet()`
 
 ```php
-getBadgeBadgesCodeGet($code): \\Kehet\ArtifactsMMO\\Model\BadgeResponseSchema
+getBadgeBadgesCodeGet($code): \Kehet\ArtifactsMMO\Model\BadgeResponseSchema
 ```
 
 Get Badge
@@ -84,7 +84,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\BadgesApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\BadgesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\BadgeResponseSchema**](../Model/BadgeResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\BadgeResponseSchema**](../Model/BadgeResponseSchema.md)
 
 ### Authorization
 

@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **type** | **string** | Item type. |
 **subtype** | **string** | Item subtype. |
 **description** | **string** | Item description. |
-**conditions** | [**\\Kehet\ArtifactsMMO\\Model\ConditionSchema[]**](ConditionSchema.md) | Item conditions. If applicable. Conditions for using or equipping the item. | [optional]
-**effects** | [**\\Kehet\ArtifactsMMO\\Model\SimpleEffectSchema[]**](SimpleEffectSchema.md) | List of object effects. For equipment, it will include item stats. | [optional]
-**craft** | [**\\Kehet\ArtifactsMMO\\Model\CraftSchema**](CraftSchema.md) | Craft information. If applicable. | [optional]
+**conditions** | [**\Kehet\ArtifactsMMO\Model\ConditionSchema[]**](ConditionSchema.md) | Item conditions. If applicable. Conditions for using or equipping the item. | [optional]
+**effects** | [**\Kehet\ArtifactsMMO\Model\SimpleEffectSchema[]**](SimpleEffectSchema.md) | List of object effects. For equipment, it will include item stats. | [optional]
+**craft** | [**\Kehet\ArtifactsMMO\Model\CraftSchema**](CraftSchema.md) | Craft information. If applicable. | [optional]
 **tradeable** | **bool** | Item tradeable status. A non-tradeable item cannot be exchanged or sold. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

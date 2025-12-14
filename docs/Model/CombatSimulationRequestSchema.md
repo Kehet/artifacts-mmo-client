@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**characters** | [**\\Kehet\ArtifactsMMO\\Model\FakeCharacterSchema[]**](FakeCharacterSchema.md) | List of fake characters (1-3). |
+**characters** | [**\Kehet\ArtifactsMMO\Model\FakeCharacterSchema[]**](FakeCharacterSchema.md) | List of fake characters (1-3). |
 **monster** | **string** | Monster code to fight against. |
 **iterations** | **int** | Number of combat iterations to simulate. |
 

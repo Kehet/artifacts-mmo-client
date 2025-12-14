@@ -70,7 +70,7 @@ jobs:
             generate \
             -i /local/openapi.json \
             -g php-nextgen \
-            -p composerPackageName=kehet/artifactsmmo-client,invokerPackage=\\Kehet\\ArtifactsMMO\\ \
+            -p composerPackageName=kehet/artifactsmmo-client,invokerPackage=Kehet\\ArtifactsMMO \
             -o /local
 
       - name: Commit changes

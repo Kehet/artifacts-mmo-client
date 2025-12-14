@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\ServerDetailsApi
+# Kehet\ArtifactsMMO\ServerDetailsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getServerDetailsGet()`
 
 ```php
-getServerDetailsGet(): \\Kehet\ArtifactsMMO\\Model\StatusResponseSchema
+getServerDetailsGet(): \Kehet\ArtifactsMMO\Model\StatusResponseSchema
 ```
 
 Get Server Details
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\ServerDetailsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\ServerDetailsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\StatusResponseSchema**](../Model/StatusResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\StatusResponseSchema**](../Model/StatusResponseSchema.md)
 
 ### Authorization
 

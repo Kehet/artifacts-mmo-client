@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\AchievementsApi
+# Kehet\ArtifactsMMO\AchievementsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAchievementAchievementsCodeGet()`
 
 ```php
-getAchievementAchievementsCodeGet($code): \\Kehet\ArtifactsMMO\\Model\AchievementResponseSchema
+getAchievementAchievementsCodeGet($code): \Kehet\ArtifactsMMO\Model\AchievementResponseSchema
 ```
 
 Get Achievement
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AchievementsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AchievementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\AchievementResponseSchema**](../Model/AchievementResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\AchievementResponseSchema**](../Model/AchievementResponseSchema.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 ## `getAllAchievementsAchievementsGet()`
 
 ```php
-getAllAchievementsAchievementsGet($type, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageAchievementSchema
+getAllAchievementsAchievementsGet($type, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageAchievementSchema
 ```
 
 Get All Achievements
@@ -82,12 +82,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AchievementsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AchievementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelAchievementType(); // \\KehetArtifactsMMO\ModelAchievementType | Type of achievements.
+$type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelAchievementType(); // \KehetArtifactsMMOModelAchievementType | Type of achievements.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
 
@@ -103,13 +103,13 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **type** | [**\\KehetArtifactsMMO\ModelAchievementType**](../Model/.md)| Type of achievements. | [optional] |
+| **type** | [**\KehetArtifactsMMOModelAchievementType**](../Model/.md)| Type of achievements. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageAchievementSchema**](../Model/DataPageAchievementSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageAchievementSchema**](../Model/DataPageAchievementSchema.md)
 
 ### Authorization
 

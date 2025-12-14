@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\ResourcesApi
+# Kehet\ArtifactsMMO\ResourcesApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllResourcesResourcesGet()`
 
 ```php
-getAllResourcesResourcesGet($min_level, $max_level, $skill, $drop, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageResourceSchema
+getAllResourcesResourcesGet($min_level, $max_level, $skill, $drop, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageResourceSchema
 ```
 
 Get All Resources
@@ -26,14 +26,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\ResourcesApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\ResourcesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $min_level = 56; // int | Minimum level.
 $max_level = 56; // int | Maximum level.
-$skill = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelGatheringSkill(); // \\KehetArtifactsMMO\ModelGatheringSkill | Skill of resources.
+$skill = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelGatheringSkill(); // \KehetArtifactsMMOModelGatheringSkill | Skill of resources.
 $drop = 'drop_example'; // string | Item code of the drop.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
@@ -52,14 +52,14 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **min_level** | **int**| Minimum level. | [optional] |
 | **max_level** | **int**| Maximum level. | [optional] |
-| **skill** | [**\\KehetArtifactsMMO\ModelGatheringSkill**](../Model/.md)| Skill of resources. | [optional] |
+| **skill** | [**\KehetArtifactsMMOModelGatheringSkill**](../Model/.md)| Skill of resources. | [optional] |
 | **drop** | **string**| Item code of the drop. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageResourceSchema**](../Model/DataPageResourceSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageResourceSchema**](../Model/DataPageResourceSchema.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ No authorization required
 ## `getResourceResourcesCodeGet()`
 
 ```php
-getResourceResourcesCodeGet($code): \\Kehet\ArtifactsMMO\\Model\ResourceResponseSchema
+getResourceResourcesCodeGet($code): \Kehet\ArtifactsMMO\Model\ResourceResponseSchema
 ```
 
 Get Resource
@@ -92,7 +92,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\ResourcesApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\ResourcesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -115,7 +115,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\ResourceResponseSchema**](../Model/ResourceResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\ResourceResponseSchema**](../Model/ResourceResponseSchema.md)
 
 ### Authorization
 

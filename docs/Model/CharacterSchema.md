@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Name of the character. |
 **account** | **string** | Account name. |
-**skin** | [**\\Kehet\ArtifactsMMO\\Model\CharacterSkin**](CharacterSkin.md) | Character skin code. |
+**skin** | [**\Kehet\ArtifactsMMO\Model\CharacterSkin**](CharacterSkin.md) | Character skin code. |
 **level** | **int** | Combat level. |
 **xp** | **int** | The current xp level of the combat level. |
 **max_xp** | **int** | XP required to level up the character. |
@@ -57,10 +57,10 @@ Name | Type | Description | Notes
 **res_earth** | **int** | % Earth resistance. Reduces earth attack. |
 **res_water** | **int** | % Water resistance. Reduces water attack. |
 **res_air** | **int** | % Air resistance. Reduces air attack. |
-**effects** | [**\\Kehet\ArtifactsMMO\\Model\StorageEffectSchema[]**](StorageEffectSchema.md) | List of active effects on the character. | [optional]
+**effects** | [**\Kehet\ArtifactsMMO\Model\StorageEffectSchema[]**](StorageEffectSchema.md) | List of active effects on the character. | [optional]
 **x** | **int** | Character x coordinate. |
 **y** | **int** | Character y coordinate. |
-**layer** | [**\\Kehet\ArtifactsMMO\\Model\MapLayer**](MapLayer.md) | Character current layer. |
+**layer** | [**\Kehet\ArtifactsMMO\Model\MapLayer**](MapLayer.md) | Character current layer. |
 **map_id** | **int** | Character current map ID. |
 **cooldown** | **int** | Cooldown in seconds. |
 **cooldown_expiration** | **\DateTime** | Datetime Cooldown expiration. | [optional]
@@ -87,6 +87,6 @@ Name | Type | Description | Notes
 **task_progress** | **int** | Task progression. |
 **task_total** | **int** | Task total objective. |
 **inventory_max_items** | **int** | Inventory max items. |
-**inventory** | [**\\Kehet\ArtifactsMMO\\Model\InventorySlot[]**](InventorySlot.md) | List of inventory slots. | [optional]
+**inventory** | [**\Kehet\ArtifactsMMO\Model\InventorySlot[]**](InventorySlot.md) | List of inventory slots. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

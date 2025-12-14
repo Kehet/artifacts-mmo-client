@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\\Kehet\ArtifactsMMO\\Model\FightResult**](FightResult.md) | The result of the fight. |
+**result** | [**\Kehet\ArtifactsMMO\Model\FightResult**](FightResult.md) | The result of the fight. |
 **turns** | **int** | Numbers of the turns of the combat. |
 **opponent** | **string** | The code of the monster fought. |
 **logs** | **string[]** | The fight logs. |
-**characters** | [**\\Kehet\ArtifactsMMO\\Model\CharacterMultiFightResultSchema[]**](CharacterMultiFightResultSchema.md) | Results for each character. |
+**characters** | [**\Kehet\ArtifactsMMO\Model\CharacterMultiFightResultSchema[]**](CharacterMultiFightResultSchema.md) | Results for each character. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

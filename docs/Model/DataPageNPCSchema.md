@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\\Kehet\ArtifactsMMO\\Model\NPCSchema[]**](NPCSchema.md) |  |
+**data** | [**\Kehet\ArtifactsMMO\Model\NPCSchema[]**](NPCSchema.md) |  |
 **total** | **int** |  | [optional]
 **page** | **int** |  | [optional]
 **size** | **int** |  | [optional]

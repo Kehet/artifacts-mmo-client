@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\ItemsApi
+# Kehet\ArtifactsMMO\ItemsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllItemsItemsGet()`
 
 ```php
-getAllItemsItemsGet($name, $min_level, $max_level, $type, $craft_skill, $craft_material, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageItemSchema
+getAllItemsItemsGet($name, $min_level, $max_level, $type, $craft_skill, $craft_material, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageItemSchema
 ```
 
 Get All Items
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\ItemsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\ItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -34,8 +34,8 @@ $apiInstance = new \Kehet\ArtifactsMMO\\Api\ItemsApi(
 $name = 'name_example'; // string | Name of the item.
 $min_level = 56; // int | Minimum level.
 $max_level = 56; // int | Maximum level.
-$type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelItemType(); // \\KehetArtifactsMMO\ModelItemType | Type of items.
-$craft_skill = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelCraftSkill(); // \\KehetArtifactsMMO\ModelCraftSkill | Skill to craft items.
+$type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelItemType(); // \KehetArtifactsMMOModelItemType | Type of items.
+$craft_skill = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelCraftSkill(); // \KehetArtifactsMMOModelCraftSkill | Skill to craft items.
 $craft_material = 'craft_material_example'; // string | Item code of items used as material for crafting.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
@@ -55,15 +55,15 @@ try {
 | **name** | **string**| Name of the item. | [optional] |
 | **min_level** | **int**| Minimum level. | [optional] |
 | **max_level** | **int**| Maximum level. | [optional] |
-| **type** | [**\\KehetArtifactsMMO\ModelItemType**](../Model/.md)| Type of items. | [optional] |
-| **craft_skill** | [**\\KehetArtifactsMMO\ModelCraftSkill**](../Model/.md)| Skill to craft items. | [optional] |
+| **type** | [**\KehetArtifactsMMOModelItemType**](../Model/.md)| Type of items. | [optional] |
+| **craft_skill** | [**\KehetArtifactsMMOModelCraftSkill**](../Model/.md)| Skill to craft items. | [optional] |
 | **craft_material** | **string**| Item code of items used as material for crafting. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageItemSchema**](../Model/DataPageItemSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageItemSchema**](../Model/DataPageItemSchema.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ No authorization required
 ## `getItemItemsCodeGet()`
 
 ```php
-getItemItemsCodeGet($code): \\Kehet\ArtifactsMMO\\Model\ItemResponseSchema
+getItemItemsCodeGet($code): \Kehet\ArtifactsMMO\Model\ItemResponseSchema
 ```
 
 Get Item
@@ -96,7 +96,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\ItemsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\ItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -119,7 +119,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\ItemResponseSchema**](../Model/ItemResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\ItemResponseSchema**](../Model/ItemResponseSchema.md)
 
 ### Authorization
 

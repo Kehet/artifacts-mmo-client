@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\AccountsApi
+# Kehet\ArtifactsMMO\AccountsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `createAccountAccountsCreatePost()`
 
 ```php
-createAccountAccountsCreatePost($add_account_schema): \\Kehet\ArtifactsMMO\\Model\ResponseSchema
+createAccountAccountsCreatePost($add_account_schema): \Kehet\ArtifactsMMO\Model\ResponseSchema
 ```
 
 Create Account
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AccountsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AccountsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$add_account_schema = new \\Kehet\ArtifactsMMO\\Model\AddAccountSchema(); // \\Kehet\ArtifactsMMO\\Model\AddAccountSchema
+$add_account_schema = new \Kehet\ArtifactsMMO\Model\AddAccountSchema(); // \Kehet\ArtifactsMMO\Model\AddAccountSchema
 
 try {
     $result = $apiInstance->createAccountAccountsCreatePost($add_account_schema);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **add_account_schema** | [**\\Kehet\ArtifactsMMO\\Model\AddAccountSchema**](../Model/AddAccountSchema.md)|  | |
+| **add_account_schema** | [**\Kehet\ArtifactsMMO\Model\AddAccountSchema**](../Model/AddAccountSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\ResponseSchema**](../Model/ResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\ResponseSchema**](../Model/ResponseSchema.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `forgotPasswordAccountsForgotPasswordPost()`
 
 ```php
-forgotPasswordAccountsForgotPasswordPost($password_reset_request_schema): \\Kehet\ArtifactsMMO\\Model\PasswordResetResponseSchema
+forgotPasswordAccountsForgotPasswordPost($password_reset_request_schema): \Kehet\ArtifactsMMO\Model\PasswordResetResponseSchema
 ```
 
 Forgot Password
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AccountsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AccountsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$password_reset_request_schema = new \\Kehet\ArtifactsMMO\\Model\PasswordResetRequestSchema(); // \\Kehet\ArtifactsMMO\\Model\PasswordResetRequestSchema
+$password_reset_request_schema = new \Kehet\ArtifactsMMO\Model\PasswordResetRequestSchema(); // \Kehet\ArtifactsMMO\Model\PasswordResetRequestSchema
 
 try {
     $result = $apiInstance->forgotPasswordAccountsForgotPasswordPost($password_reset_request_schema);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **password_reset_request_schema** | [**\\Kehet\ArtifactsMMO\\Model\PasswordResetRequestSchema**](../Model/PasswordResetRequestSchema.md)|  | |
+| **password_reset_request_schema** | [**\Kehet\ArtifactsMMO\Model\PasswordResetRequestSchema**](../Model/PasswordResetRequestSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\PasswordResetResponseSchema**](../Model/PasswordResetResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\PasswordResetResponseSchema**](../Model/PasswordResetResponseSchema.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `getAccountAccountsAccountGet()`
 
 ```php
-getAccountAccountsAccountGet($account): \\Kehet\ArtifactsMMO\\Model\AccountDetailsSchema
+getAccountAccountsAccountGet($account): \Kehet\ArtifactsMMO\Model\AccountDetailsSchema
 ```
 
 Get Account
@@ -140,7 +140,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AccountsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AccountsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -163,7 +163,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\AccountDetailsSchema**](../Model/AccountDetailsSchema.md)
+[**\Kehet\ArtifactsMMO\Model\AccountDetailsSchema**](../Model/AccountDetailsSchema.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `getAccountAchievementsAccountsAccountAchievementsGet()`
 
 ```php
-getAccountAchievementsAccountsAccountAchievementsGet($account, $type, $completed, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageAccountAchievementSchema
+getAccountAchievementsAccountsAccountAchievementsGet($account, $type, $completed, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageAccountAchievementSchema
 ```
 
 Get Account Achievements
@@ -196,13 +196,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AccountsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AccountsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $account = 'account_example'; // string | The name of the account.
-$type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelAchievementType(); // \\KehetArtifactsMMO\ModelAchievementType | Type of achievements.
+$type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelAchievementType(); // \KehetArtifactsMMOModelAchievementType | Type of achievements.
 $completed = True; // bool | Filter by completed achievements.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
@@ -220,14 +220,14 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **account** | **string**| The name of the account. | |
-| **type** | [**\\KehetArtifactsMMO\ModelAchievementType**](../Model/.md)| Type of achievements. | [optional] |
+| **type** | [**\KehetArtifactsMMOModelAchievementType**](../Model/.md)| Type of achievements. | [optional] |
 | **completed** | **bool**| Filter by completed achievements. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageAccountAchievementSchema**](../Model/DataPageAccountAchievementSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageAccountAchievementSchema**](../Model/DataPageAccountAchievementSchema.md)
 
 ### Authorization
 
@@ -245,7 +245,7 @@ No authorization required
 ## `getAccountCharactersAccountsAccountCharactersGet()`
 
 ```php
-getAccountCharactersAccountsAccountCharactersGet($account): \\Kehet\ArtifactsMMO\\Model\CharactersListSchema
+getAccountCharactersAccountsAccountCharactersGet($account): \Kehet\ArtifactsMMO\Model\CharactersListSchema
 ```
 
 Get Account Characters
@@ -260,7 +260,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AccountsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AccountsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -283,7 +283,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharactersListSchema**](../Model/CharactersListSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharactersListSchema**](../Model/CharactersListSchema.md)
 
 ### Authorization
 
@@ -301,7 +301,7 @@ No authorization required
 ## `resetPasswordAccountsResetPasswordPost()`
 
 ```php
-resetPasswordAccountsResetPasswordPost($password_reset_confirm_schema): \\Kehet\ArtifactsMMO\\Model\PasswordResetResponseSchema
+resetPasswordAccountsResetPasswordPost($password_reset_confirm_schema): \Kehet\ArtifactsMMO\Model\PasswordResetResponseSchema
 ```
 
 Reset Password
@@ -316,12 +316,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\AccountsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\AccountsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$password_reset_confirm_schema = new \\Kehet\ArtifactsMMO\\Model\PasswordResetConfirmSchema(); // \\Kehet\ArtifactsMMO\\Model\PasswordResetConfirmSchema
+$password_reset_confirm_schema = new \Kehet\ArtifactsMMO\Model\PasswordResetConfirmSchema(); // \Kehet\ArtifactsMMO\Model\PasswordResetConfirmSchema
 
 try {
     $result = $apiInstance->resetPasswordAccountsResetPasswordPost($password_reset_confirm_schema);
@@ -335,11 +335,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **password_reset_confirm_schema** | [**\\Kehet\ArtifactsMMO\\Model\PasswordResetConfirmSchema**](../Model/PasswordResetConfirmSchema.md)|  | |
+| **password_reset_confirm_schema** | [**\Kehet\ArtifactsMMO\Model\PasswordResetConfirmSchema**](../Model/PasswordResetConfirmSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\PasswordResetResponseSchema**](../Model/PasswordResetResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\PasswordResetResponseSchema**](../Model/PasswordResetResponseSchema.md)
 
 ### Authorization
 

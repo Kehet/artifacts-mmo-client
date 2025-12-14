@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\EventsApi
+# Kehet\ArtifactsMMO\EventsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllActiveEventsEventsActiveGet()`
 
 ```php
-getAllActiveEventsEventsActiveGet($page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageActiveEventSchema
+getAllActiveEventsEventsActiveGet($page, $size): \Kehet\ArtifactsMMO\Model\DataPageActiveEventSchema
 ```
 
 Get All Active Events
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\EventsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -52,7 +52,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageActiveEventSchema**](../Model/DataPageActiveEventSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageActiveEventSchema**](../Model/DataPageActiveEventSchema.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `getAllEventsEventsGet()`
 
 ```php
-getAllEventsEventsGet($type, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageEventSchema
+getAllEventsEventsGet($type, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageEventSchema
 ```
 
 Get All Events
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\EventsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelMapContentType(); // \\KehetArtifactsMMO\ModelMapContentType | Type of events.
+$type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelMapContentType(); // \KehetArtifactsMMOModelMapContentType | Type of events.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
 
@@ -106,13 +106,13 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **type** | [**\\KehetArtifactsMMO\ModelMapContentType**](../Model/.md)| Type of events. | [optional] |
+| **type** | [**\KehetArtifactsMMOModelMapContentType**](../Model/.md)| Type of events. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageEventSchema**](../Model/DataPageEventSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageEventSchema**](../Model/DataPageEventSchema.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ No authorization required
 ## `spawnEventEventsSpawnPost()`
 
 ```php
-spawnEventEventsSpawnPost($spawn_event_request): \\Kehet\ArtifactsMMO\\Model\ActiveEventResponseSchema
+spawnEventEventsSpawnPost($spawn_event_request): \Kehet\ArtifactsMMO\Model\ActiveEventResponseSchema
 ```
 
 Spawn Event
@@ -145,16 +145,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\EventsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\EventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$spawn_event_request = new \\Kehet\ArtifactsMMO\\Model\SpawnEventRequest(); // \\Kehet\ArtifactsMMO\\Model\SpawnEventRequest
+$spawn_event_request = new \Kehet\ArtifactsMMO\Model\SpawnEventRequest(); // \Kehet\ArtifactsMMO\Model\SpawnEventRequest
 
 try {
     $result = $apiInstance->spawnEventEventsSpawnPost($spawn_event_request);
@@ -168,11 +168,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **spawn_event_request** | [**\\Kehet\ArtifactsMMO\\Model\SpawnEventRequest**](../Model/SpawnEventRequest.md)|  | |
+| **spawn_event_request** | [**\Kehet\ArtifactsMMO\Model\SpawnEventRequest**](../Model/SpawnEventRequest.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\ActiveEventResponseSchema**](../Model/ActiveEventResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\ActiveEventResponseSchema**](../Model/ActiveEventResponseSchema.md)
 
 ### Authorization
 

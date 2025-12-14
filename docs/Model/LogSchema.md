@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **character** | **string** | Character name. |
 **account** | **string** | Account character. |
-**type** | [**\\Kehet\ArtifactsMMO\\Model\LogType**](LogType.md) | Type of action. |
+**type** | [**\Kehet\ArtifactsMMO\Model\LogType**](LogType.md) | Type of action. |
 **description** | **string** | Description of action. |
 **content** | **mixed** |  |
 **cooldown** | **int** | Cooldown in seconds. |

@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\TokenApi
+# Kehet\ArtifactsMMO\TokenApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `generateTokenTokenPost()`
 
 ```php
-generateTokenTokenPost(): \\Kehet\ArtifactsMMO\\Model\TokenResponseSchema
+generateTokenTokenPost(): \Kehet\ArtifactsMMO\Model\TokenResponseSchema
 ```
 
 Generate Token
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: HTTPBasic
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\TokenApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\TokenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\TokenResponseSchema**](../Model/TokenResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\TokenResponseSchema**](../Model/TokenResponseSchema.md)
 
 ### Authorization
 

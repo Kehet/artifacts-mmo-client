@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\LeaderboardApi
+# Kehet\ArtifactsMMO\LeaderboardApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAccountsLeaderboardLeaderboardAccountsGet()`
 
 ```php
-getAccountsLeaderboardLeaderboardAccountsGet($sort, $name, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageAccountLeaderboardSchema
+getAccountsLeaderboardLeaderboardAccountsGet($sort, $name, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageAccountLeaderboardSchema
 ```
 
 Get Accounts Leaderboard
@@ -26,12 +26,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\LeaderboardApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\LeaderboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$sort = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelAccountLeaderboardType(); // \\KehetArtifactsMMO\ModelAccountLeaderboardType | Sort of account leaderboards.
+$sort = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelAccountLeaderboardType(); // \KehetArtifactsMMOModelAccountLeaderboardType | Sort of account leaderboards.
 $name = 'name_example'; // string | Account name.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
@@ -48,14 +48,14 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **sort** | [**\\KehetArtifactsMMO\ModelAccountLeaderboardType**](../Model/.md)| Sort of account leaderboards. | [optional] |
+| **sort** | [**\KehetArtifactsMMOModelAccountLeaderboardType**](../Model/.md)| Sort of account leaderboards. | [optional] |
 | **name** | **string**| Account name. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageAccountLeaderboardSchema**](../Model/DataPageAccountLeaderboardSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageAccountLeaderboardSchema**](../Model/DataPageAccountLeaderboardSchema.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `getCharactersLeaderboardLeaderboardCharactersGet()`
 
 ```php
-getCharactersLeaderboardLeaderboardCharactersGet($sort, $name, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageCharacterLeaderboardSchema
+getCharactersLeaderboardLeaderboardCharactersGet($sort, $name, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageCharacterLeaderboardSchema
 ```
 
 Get Characters Leaderboard
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\LeaderboardApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\LeaderboardApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$sort = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelCharacterLeaderboardType(); // \\KehetArtifactsMMO\ModelCharacterLeaderboardType | Sort of character leaderboards.
+$sort = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelCharacterLeaderboardType(); // \KehetArtifactsMMOModelCharacterLeaderboardType | Sort of character leaderboards.
 $name = 'name_example'; // string | Character name.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
@@ -110,14 +110,14 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **sort** | [**\\KehetArtifactsMMO\ModelCharacterLeaderboardType**](../Model/.md)| Sort of character leaderboards. | [optional] |
+| **sort** | [**\KehetArtifactsMMOModelCharacterLeaderboardType**](../Model/.md)| Sort of character leaderboards. | [optional] |
 | **name** | **string**| Character name. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageCharacterLeaderboardSchema**](../Model/DataPageCharacterLeaderboardSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageCharacterLeaderboardSchema**](../Model/DataPageCharacterLeaderboardSchema.md)
 
 ### Authorization
 

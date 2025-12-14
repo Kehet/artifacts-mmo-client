@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**loc** | [**\\Kehet\ArtifactsMMO\\Model\ValidationErrorLocInner[]**](ValidationErrorLocInner.md) |  |
+**loc** | [**\Kehet\ArtifactsMMO\Model\ValidationErrorLocInner[]**](ValidationErrorLocInner.md) |  |
 **msg** | **string** |  |
 **type** | **string** |  |
 

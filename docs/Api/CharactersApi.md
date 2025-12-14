@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\CharactersApi
+# Kehet\ArtifactsMMO\CharactersApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `createCharacterCharactersCreatePost()`
 
 ```php
-createCharacterCharactersCreatePost($add_character_schema): \\Kehet\ArtifactsMMO\\Model\CharacterResponseSchema
+createCharacterCharactersCreatePost($add_character_schema): \Kehet\ArtifactsMMO\Model\CharacterResponseSchema
 ```
 
 Create Character
@@ -28,16 +28,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\CharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\CharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$add_character_schema = new \\Kehet\ArtifactsMMO\\Model\AddCharacterSchema(); // \\Kehet\ArtifactsMMO\\Model\AddCharacterSchema
+$add_character_schema = new \Kehet\ArtifactsMMO\Model\AddCharacterSchema(); // \Kehet\ArtifactsMMO\Model\AddCharacterSchema
 
 try {
     $result = $apiInstance->createCharacterCharactersCreatePost($add_character_schema);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **add_character_schema** | [**\\Kehet\ArtifactsMMO\\Model\AddCharacterSchema**](../Model/AddCharacterSchema.md)|  | |
+| **add_character_schema** | [**\Kehet\ArtifactsMMO\Model\AddCharacterSchema**](../Model/AddCharacterSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharacterResponseSchema**](../Model/CharacterResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharacterResponseSchema**](../Model/CharacterResponseSchema.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `deleteCharacterCharactersDeletePost()`
 
 ```php
-deleteCharacterCharactersDeletePost($delete_character_schema): \\Kehet\ArtifactsMMO\\Model\CharacterResponseSchema
+deleteCharacterCharactersDeletePost($delete_character_schema): \Kehet\ArtifactsMMO\Model\CharacterResponseSchema
 ```
 
 Delete Character
@@ -88,16 +88,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\CharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\CharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$delete_character_schema = new \\Kehet\ArtifactsMMO\\Model\DeleteCharacterSchema(); // \\Kehet\ArtifactsMMO\\Model\DeleteCharacterSchema
+$delete_character_schema = new \Kehet\ArtifactsMMO\Model\DeleteCharacterSchema(); // \Kehet\ArtifactsMMO\Model\DeleteCharacterSchema
 
 try {
     $result = $apiInstance->deleteCharacterCharactersDeletePost($delete_character_schema);
@@ -111,11 +111,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **delete_character_schema** | [**\\Kehet\ArtifactsMMO\\Model\DeleteCharacterSchema**](../Model/DeleteCharacterSchema.md)|  | |
+| **delete_character_schema** | [**\Kehet\ArtifactsMMO\Model\DeleteCharacterSchema**](../Model/DeleteCharacterSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharacterResponseSchema**](../Model/CharacterResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharacterResponseSchema**](../Model/CharacterResponseSchema.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ try {
 ## `getActiveCharactersCharactersActiveGet()`
 
 ```php
-getActiveCharactersCharactersActiveGet($page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageActiveCharacterSchema
+getActiveCharactersCharactersActiveGet($page, $size): \Kehet\ArtifactsMMO\Model\DataPageActiveCharacterSchema
 ```
 
 Get Active Characters
@@ -148,7 +148,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\CharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\CharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -173,7 +173,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageActiveCharacterSchema**](../Model/DataPageActiveCharacterSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageActiveCharacterSchema**](../Model/DataPageActiveCharacterSchema.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ No authorization required
 ## `getCharacterCharactersNameGet()`
 
 ```php
-getCharacterCharactersNameGet($name): \\Kehet\ArtifactsMMO\\Model\CharacterResponseSchema
+getCharacterCharactersNameGet($name): \Kehet\ArtifactsMMO\Model\CharacterResponseSchema
 ```
 
 Get Character
@@ -206,7 +206,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\CharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\CharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -229,7 +229,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharacterResponseSchema**](../Model/CharacterResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharacterResponseSchema**](../Model/CharacterResponseSchema.md)
 
 ### Authorization
 

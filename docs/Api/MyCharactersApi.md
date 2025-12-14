@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\MyCharactersApi
+# Kehet\ArtifactsMMO\MyCharactersApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -41,7 +41,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `actionAcceptNewTaskMyNameActionTaskNewPost()`
 
 ```php
-actionAcceptNewTaskMyNameActionTaskNewPost($name): \\Kehet\ArtifactsMMO\\Model\TaskResponseSchema
+actionAcceptNewTaskMyNameActionTaskNewPost($name): \Kehet\ArtifactsMMO\Model\TaskResponseSchema
 ```
 
 Action Accept New Task
@@ -56,10 +56,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -83,7 +83,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\TaskResponseSchema**](../Model/TaskResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\TaskResponseSchema**](../Model/TaskResponseSchema.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ try {
 ## `actionBuyBankExpansionMyNameActionBankBuyExpansionPost()`
 
 ```php
-actionBuyBankExpansionMyNameActionBankBuyExpansionPost($name): \\Kehet\ArtifactsMMO\\Model\BankExtensionTransactionResponseSchema
+actionBuyBankExpansionMyNameActionBankBuyExpansionPost($name): \Kehet\ArtifactsMMO\Model\BankExtensionTransactionResponseSchema
 ```
 
 Action Buy Bank Expansion
@@ -116,10 +116,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -143,7 +143,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\BankExtensionTransactionResponseSchema**](../Model/BankExtensionTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\BankExtensionTransactionResponseSchema**](../Model/BankExtensionTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -161,7 +161,7 @@ try {
 ## `actionChangeSkinMyNameActionChangeSkinPost()`
 
 ```php
-actionChangeSkinMyNameActionChangeSkinPost($name, $change_skin_character_schema): \\Kehet\ArtifactsMMO\\Model\ChangeSkinResponseSchema
+actionChangeSkinMyNameActionChangeSkinPost($name, $change_skin_character_schema): \Kehet\ArtifactsMMO\Model\ChangeSkinResponseSchema
 ```
 
 Action Change Skin
@@ -176,17 +176,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$change_skin_character_schema = new \\Kehet\ArtifactsMMO\\Model\ChangeSkinCharacterSchema(); // \\Kehet\ArtifactsMMO\\Model\ChangeSkinCharacterSchema
+$change_skin_character_schema = new \Kehet\ArtifactsMMO\Model\ChangeSkinCharacterSchema(); // \Kehet\ArtifactsMMO\Model\ChangeSkinCharacterSchema
 
 try {
     $result = $apiInstance->actionChangeSkinMyNameActionChangeSkinPost($name, $change_skin_character_schema);
@@ -201,11 +201,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **change_skin_character_schema** | [**\\Kehet\ArtifactsMMO\\Model\ChangeSkinCharacterSchema**](../Model/ChangeSkinCharacterSchema.md)|  | |
+| **change_skin_character_schema** | [**\Kehet\ArtifactsMMO\Model\ChangeSkinCharacterSchema**](../Model/ChangeSkinCharacterSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\ChangeSkinResponseSchema**](../Model/ChangeSkinResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\ChangeSkinResponseSchema**](../Model/ChangeSkinResponseSchema.md)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ try {
 ## `actionCompleteTaskMyNameActionTaskCompletePost()`
 
 ```php
-actionCompleteTaskMyNameActionTaskCompletePost($name): \\Kehet\ArtifactsMMO\\Model\RewardDataResponseSchema
+actionCompleteTaskMyNameActionTaskCompletePost($name): \Kehet\ArtifactsMMO\Model\RewardDataResponseSchema
 ```
 
 Action Complete Task
@@ -238,10 +238,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -265,7 +265,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\RewardDataResponseSchema**](../Model/RewardDataResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\RewardDataResponseSchema**](../Model/RewardDataResponseSchema.md)
 
 ### Authorization
 
@@ -283,7 +283,7 @@ try {
 ## `actionCraftingMyNameActionCraftingPost()`
 
 ```php
-actionCraftingMyNameActionCraftingPost($name, $crafting_schema): \\Kehet\ArtifactsMMO\\Model\SkillResponseSchema
+actionCraftingMyNameActionCraftingPost($name, $crafting_schema): \Kehet\ArtifactsMMO\Model\SkillResponseSchema
 ```
 
 Action Crafting
@@ -298,17 +298,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$crafting_schema = new \\Kehet\ArtifactsMMO\\Model\CraftingSchema(); // \\Kehet\ArtifactsMMO\\Model\CraftingSchema
+$crafting_schema = new \Kehet\ArtifactsMMO\Model\CraftingSchema(); // \Kehet\ArtifactsMMO\Model\CraftingSchema
 
 try {
     $result = $apiInstance->actionCraftingMyNameActionCraftingPost($name, $crafting_schema);
@@ -323,11 +323,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **crafting_schema** | [**\\Kehet\ArtifactsMMO\\Model\CraftingSchema**](../Model/CraftingSchema.md)|  | |
+| **crafting_schema** | [**\Kehet\ArtifactsMMO\Model\CraftingSchema**](../Model/CraftingSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\SkillResponseSchema**](../Model/SkillResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\SkillResponseSchema**](../Model/SkillResponseSchema.md)
 
 ### Authorization
 
@@ -345,7 +345,7 @@ try {
 ## `actionDeleteItemMyNameActionDeletePost()`
 
 ```php
-actionDeleteItemMyNameActionDeletePost($name, $simple_item_schema): \\Kehet\ArtifactsMMO\\Model\DeleteItemResponseSchema
+actionDeleteItemMyNameActionDeletePost($name, $simple_item_schema): \Kehet\ArtifactsMMO\Model\DeleteItemResponseSchema
 ```
 
 Action Delete Item
@@ -360,17 +360,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$simple_item_schema = new \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema(); // \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema
+$simple_item_schema = new \Kehet\ArtifactsMMO\Model\SimpleItemSchema(); // \Kehet\ArtifactsMMO\Model\SimpleItemSchema
 
 try {
     $result = $apiInstance->actionDeleteItemMyNameActionDeletePost($name, $simple_item_schema);
@@ -385,11 +385,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **simple_item_schema** | [**\\Kehet\ArtifactsMMO\\Model\SimpleItemSchema**](../Model/SimpleItemSchema.md)|  | |
+| **simple_item_schema** | [**\Kehet\ArtifactsMMO\Model\SimpleItemSchema**](../Model/SimpleItemSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DeleteItemResponseSchema**](../Model/DeleteItemResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DeleteItemResponseSchema**](../Model/DeleteItemResponseSchema.md)
 
 ### Authorization
 
@@ -407,7 +407,7 @@ try {
 ## `actionDepositBankGoldMyNameActionBankDepositGoldPost()`
 
 ```php
-actionDepositBankGoldMyNameActionBankDepositGoldPost($name, $deposit_withdraw_gold_schema): \\Kehet\ArtifactsMMO\\Model\BankGoldTransactionResponseSchema
+actionDepositBankGoldMyNameActionBankDepositGoldPost($name, $deposit_withdraw_gold_schema): \Kehet\ArtifactsMMO\Model\BankGoldTransactionResponseSchema
 ```
 
 Action Deposit Bank Gold
@@ -422,17 +422,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$deposit_withdraw_gold_schema = new \\Kehet\ArtifactsMMO\\Model\DepositWithdrawGoldSchema(); // \\Kehet\ArtifactsMMO\\Model\DepositWithdrawGoldSchema
+$deposit_withdraw_gold_schema = new \Kehet\ArtifactsMMO\Model\DepositWithdrawGoldSchema(); // \Kehet\ArtifactsMMO\Model\DepositWithdrawGoldSchema
 
 try {
     $result = $apiInstance->actionDepositBankGoldMyNameActionBankDepositGoldPost($name, $deposit_withdraw_gold_schema);
@@ -447,11 +447,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **deposit_withdraw_gold_schema** | [**\\Kehet\ArtifactsMMO\\Model\DepositWithdrawGoldSchema**](../Model/DepositWithdrawGoldSchema.md)|  | |
+| **deposit_withdraw_gold_schema** | [**\Kehet\ArtifactsMMO\Model\DepositWithdrawGoldSchema**](../Model/DepositWithdrawGoldSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\BankGoldTransactionResponseSchema**](../Model/BankGoldTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\BankGoldTransactionResponseSchema**](../Model/BankGoldTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -469,7 +469,7 @@ try {
 ## `actionDepositBankItemMyNameActionBankDepositItemPost()`
 
 ```php
-actionDepositBankItemMyNameActionBankDepositItemPost($name, $simple_item_schema): \\Kehet\ArtifactsMMO\\Model\BankItemTransactionResponseSchema
+actionDepositBankItemMyNameActionBankDepositItemPost($name, $simple_item_schema): \Kehet\ArtifactsMMO\Model\BankItemTransactionResponseSchema
 ```
 
 Action Deposit Bank Item
@@ -484,17 +484,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$simple_item_schema = array(new \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema()); // \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema[]
+$simple_item_schema = array(new \Kehet\ArtifactsMMO\Model\SimpleItemSchema()); // \Kehet\ArtifactsMMO\Model\SimpleItemSchema[]
 
 try {
     $result = $apiInstance->actionDepositBankItemMyNameActionBankDepositItemPost($name, $simple_item_schema);
@@ -509,11 +509,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **simple_item_schema** | [**\\Kehet\ArtifactsMMO\\Model\SimpleItemSchema[]**](../Model/SimpleItemSchema.md)|  | |
+| **simple_item_schema** | [**\Kehet\ArtifactsMMO\Model\SimpleItemSchema[]**](../Model/SimpleItemSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\BankItemTransactionResponseSchema**](../Model/BankItemTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\BankItemTransactionResponseSchema**](../Model/BankItemTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -531,7 +531,7 @@ try {
 ## `actionEquipItemMyNameActionEquipPost()`
 
 ```php
-actionEquipItemMyNameActionEquipPost($name, $equip_schema): \\Kehet\ArtifactsMMO\\Model\EquipmentResponseSchema
+actionEquipItemMyNameActionEquipPost($name, $equip_schema): \Kehet\ArtifactsMMO\Model\EquipmentResponseSchema
 ```
 
 Action Equip Item
@@ -546,17 +546,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$equip_schema = new \\Kehet\ArtifactsMMO\\Model\EquipSchema(); // \\Kehet\ArtifactsMMO\\Model\EquipSchema
+$equip_schema = new \Kehet\ArtifactsMMO\Model\EquipSchema(); // \Kehet\ArtifactsMMO\Model\EquipSchema
 
 try {
     $result = $apiInstance->actionEquipItemMyNameActionEquipPost($name, $equip_schema);
@@ -571,11 +571,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **equip_schema** | [**\\Kehet\ArtifactsMMO\\Model\EquipSchema**](../Model/EquipSchema.md)|  | |
+| **equip_schema** | [**\Kehet\ArtifactsMMO\Model\EquipSchema**](../Model/EquipSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\EquipmentResponseSchema**](../Model/EquipmentResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\EquipmentResponseSchema**](../Model/EquipmentResponseSchema.md)
 
 ### Authorization
 
@@ -593,7 +593,7 @@ try {
 ## `actionFightMyNameActionFightPost()`
 
 ```php
-actionFightMyNameActionFightPost($name, $fight_request_schema): \\Kehet\ArtifactsMMO\\Model\CharacterFightResponseSchema
+actionFightMyNameActionFightPost($name, $fight_request_schema): \Kehet\ArtifactsMMO\Model\CharacterFightResponseSchema
 ```
 
 Action Fight
@@ -608,17 +608,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$fight_request_schema = new \\Kehet\ArtifactsMMO\\Model\FightRequestSchema(); // \\Kehet\ArtifactsMMO\\Model\FightRequestSchema
+$fight_request_schema = new \Kehet\ArtifactsMMO\Model\FightRequestSchema(); // \Kehet\ArtifactsMMO\Model\FightRequestSchema
 
 try {
     $result = $apiInstance->actionFightMyNameActionFightPost($name, $fight_request_schema);
@@ -633,11 +633,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **fight_request_schema** | [**\\Kehet\ArtifactsMMO\\Model\FightRequestSchema**](../Model/FightRequestSchema.md)|  | [optional] |
+| **fight_request_schema** | [**\Kehet\ArtifactsMMO\Model\FightRequestSchema**](../Model/FightRequestSchema.md)|  | [optional] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharacterFightResponseSchema**](../Model/CharacterFightResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharacterFightResponseSchema**](../Model/CharacterFightResponseSchema.md)
 
 ### Authorization
 
@@ -655,7 +655,7 @@ try {
 ## `actionGatheringMyNameActionGatheringPost()`
 
 ```php
-actionGatheringMyNameActionGatheringPost($name): \\Kehet\ArtifactsMMO\\Model\SkillResponseSchema
+actionGatheringMyNameActionGatheringPost($name): \Kehet\ArtifactsMMO\Model\SkillResponseSchema
 ```
 
 Action Gathering
@@ -670,10 +670,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -697,7 +697,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\SkillResponseSchema**](../Model/SkillResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\SkillResponseSchema**](../Model/SkillResponseSchema.md)
 
 ### Authorization
 
@@ -715,7 +715,7 @@ try {
 ## `actionGeBuyItemMyNameActionGrandexchangeBuyPost()`
 
 ```php
-actionGeBuyItemMyNameActionGrandexchangeBuyPost($name, $ge_buy_order_schema): \\Kehet\ArtifactsMMO\\Model\GETransactionResponseSchema
+actionGeBuyItemMyNameActionGrandexchangeBuyPost($name, $ge_buy_order_schema): \Kehet\ArtifactsMMO\Model\GETransactionResponseSchema
 ```
 
 Action Ge Buy Item
@@ -730,17 +730,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$ge_buy_order_schema = new \\Kehet\ArtifactsMMO\\Model\GEBuyOrderSchema(); // \\Kehet\ArtifactsMMO\\Model\GEBuyOrderSchema
+$ge_buy_order_schema = new \Kehet\ArtifactsMMO\Model\GEBuyOrderSchema(); // \Kehet\ArtifactsMMO\Model\GEBuyOrderSchema
 
 try {
     $result = $apiInstance->actionGeBuyItemMyNameActionGrandexchangeBuyPost($name, $ge_buy_order_schema);
@@ -755,11 +755,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **ge_buy_order_schema** | [**\\Kehet\ArtifactsMMO\\Model\GEBuyOrderSchema**](../Model/GEBuyOrderSchema.md)|  | |
+| **ge_buy_order_schema** | [**\Kehet\ArtifactsMMO\Model\GEBuyOrderSchema**](../Model/GEBuyOrderSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\GETransactionResponseSchema**](../Model/GETransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\GETransactionResponseSchema**](../Model/GETransactionResponseSchema.md)
 
 ### Authorization
 
@@ -777,7 +777,7 @@ try {
 ## `actionGeCancelSellOrderMyNameActionGrandexchangeCancelPost()`
 
 ```php
-actionGeCancelSellOrderMyNameActionGrandexchangeCancelPost($name, $ge_cancel_order_schema): \\Kehet\ArtifactsMMO\\Model\GETransactionResponseSchema
+actionGeCancelSellOrderMyNameActionGrandexchangeCancelPost($name, $ge_cancel_order_schema): \Kehet\ArtifactsMMO\Model\GETransactionResponseSchema
 ```
 
 Action Ge Cancel Sell Order
@@ -792,17 +792,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$ge_cancel_order_schema = new \\Kehet\ArtifactsMMO\\Model\GECancelOrderSchema(); // \\Kehet\ArtifactsMMO\\Model\GECancelOrderSchema
+$ge_cancel_order_schema = new \Kehet\ArtifactsMMO\Model\GECancelOrderSchema(); // \Kehet\ArtifactsMMO\Model\GECancelOrderSchema
 
 try {
     $result = $apiInstance->actionGeCancelSellOrderMyNameActionGrandexchangeCancelPost($name, $ge_cancel_order_schema);
@@ -817,11 +817,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **ge_cancel_order_schema** | [**\\Kehet\ArtifactsMMO\\Model\GECancelOrderSchema**](../Model/GECancelOrderSchema.md)|  | |
+| **ge_cancel_order_schema** | [**\Kehet\ArtifactsMMO\Model\GECancelOrderSchema**](../Model/GECancelOrderSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\GETransactionResponseSchema**](../Model/GETransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\GETransactionResponseSchema**](../Model/GETransactionResponseSchema.md)
 
 ### Authorization
 
@@ -839,7 +839,7 @@ try {
 ## `actionGeCreateSellOrderMyNameActionGrandexchangeSellPost()`
 
 ```php
-actionGeCreateSellOrderMyNameActionGrandexchangeSellPost($name, $ge_order_creationr_schema): \\Kehet\ArtifactsMMO\\Model\GECreateOrderTransactionResponseSchema
+actionGeCreateSellOrderMyNameActionGrandexchangeSellPost($name, $ge_order_creationr_schema): \Kehet\ArtifactsMMO\Model\GECreateOrderTransactionResponseSchema
 ```
 
 Action Ge Create Sell Order
@@ -854,17 +854,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$ge_order_creationr_schema = new \\Kehet\ArtifactsMMO\\Model\GEOrderCreationrSchema(); // \\Kehet\ArtifactsMMO\\Model\GEOrderCreationrSchema
+$ge_order_creationr_schema = new \Kehet\ArtifactsMMO\Model\GEOrderCreationrSchema(); // \Kehet\ArtifactsMMO\Model\GEOrderCreationrSchema
 
 try {
     $result = $apiInstance->actionGeCreateSellOrderMyNameActionGrandexchangeSellPost($name, $ge_order_creationr_schema);
@@ -879,11 +879,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **ge_order_creationr_schema** | [**\\Kehet\ArtifactsMMO\\Model\GEOrderCreationrSchema**](../Model/GEOrderCreationrSchema.md)|  | |
+| **ge_order_creationr_schema** | [**\Kehet\ArtifactsMMO\Model\GEOrderCreationrSchema**](../Model/GEOrderCreationrSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\GECreateOrderTransactionResponseSchema**](../Model/GECreateOrderTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\GECreateOrderTransactionResponseSchema**](../Model/GECreateOrderTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -901,7 +901,7 @@ try {
 ## `actionGiveGoldMyNameActionGiveGoldPost()`
 
 ```php
-actionGiveGoldMyNameActionGiveGoldPost($name, $give_gold_schema): \\Kehet\ArtifactsMMO\\Model\GiveGoldResponseSchema
+actionGiveGoldMyNameActionGiveGoldPost($name, $give_gold_schema): \Kehet\ArtifactsMMO\Model\GiveGoldResponseSchema
 ```
 
 Action Give Gold
@@ -916,17 +916,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$give_gold_schema = new \\Kehet\ArtifactsMMO\\Model\GiveGoldSchema(); // \\Kehet\ArtifactsMMO\\Model\GiveGoldSchema
+$give_gold_schema = new \Kehet\ArtifactsMMO\Model\GiveGoldSchema(); // \Kehet\ArtifactsMMO\Model\GiveGoldSchema
 
 try {
     $result = $apiInstance->actionGiveGoldMyNameActionGiveGoldPost($name, $give_gold_schema);
@@ -941,11 +941,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **give_gold_schema** | [**\\Kehet\ArtifactsMMO\\Model\GiveGoldSchema**](../Model/GiveGoldSchema.md)|  | |
+| **give_gold_schema** | [**\Kehet\ArtifactsMMO\Model\GiveGoldSchema**](../Model/GiveGoldSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\GiveGoldResponseSchema**](../Model/GiveGoldResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\GiveGoldResponseSchema**](../Model/GiveGoldResponseSchema.md)
 
 ### Authorization
 
@@ -963,7 +963,7 @@ try {
 ## `actionGiveItemsMyNameActionGiveItemPost()`
 
 ```php
-actionGiveItemsMyNameActionGiveItemPost($name, $give_items_schema): \\Kehet\ArtifactsMMO\\Model\GiveItemResponseSchema
+actionGiveItemsMyNameActionGiveItemPost($name, $give_items_schema): \Kehet\ArtifactsMMO\Model\GiveItemResponseSchema
 ```
 
 Action Give Items
@@ -978,17 +978,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$give_items_schema = new \\Kehet\ArtifactsMMO\\Model\GiveItemsSchema(); // \\Kehet\ArtifactsMMO\\Model\GiveItemsSchema
+$give_items_schema = new \Kehet\ArtifactsMMO\Model\GiveItemsSchema(); // \Kehet\ArtifactsMMO\Model\GiveItemsSchema
 
 try {
     $result = $apiInstance->actionGiveItemsMyNameActionGiveItemPost($name, $give_items_schema);
@@ -1003,11 +1003,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **give_items_schema** | [**\\Kehet\ArtifactsMMO\\Model\GiveItemsSchema**](../Model/GiveItemsSchema.md)|  | |
+| **give_items_schema** | [**\Kehet\ArtifactsMMO\Model\GiveItemsSchema**](../Model/GiveItemsSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\GiveItemResponseSchema**](../Model/GiveItemResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\GiveItemResponseSchema**](../Model/GiveItemResponseSchema.md)
 
 ### Authorization
 
@@ -1025,7 +1025,7 @@ try {
 ## `actionMoveMyNameActionMovePost()`
 
 ```php
-actionMoveMyNameActionMovePost($name, $destination_schema): \\Kehet\ArtifactsMMO\\Model\CharacterMovementResponseSchema
+actionMoveMyNameActionMovePost($name, $destination_schema): \Kehet\ArtifactsMMO\Model\CharacterMovementResponseSchema
 ```
 
 Action Move
@@ -1040,17 +1040,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$destination_schema = new \\Kehet\ArtifactsMMO\\Model\DestinationSchema(); // \\Kehet\ArtifactsMMO\\Model\DestinationSchema
+$destination_schema = new \Kehet\ArtifactsMMO\Model\DestinationSchema(); // \Kehet\ArtifactsMMO\Model\DestinationSchema
 
 try {
     $result = $apiInstance->actionMoveMyNameActionMovePost($name, $destination_schema);
@@ -1065,11 +1065,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **destination_schema** | [**\\Kehet\ArtifactsMMO\\Model\DestinationSchema**](../Model/DestinationSchema.md)|  | |
+| **destination_schema** | [**\Kehet\ArtifactsMMO\Model\DestinationSchema**](../Model/DestinationSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharacterMovementResponseSchema**](../Model/CharacterMovementResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharacterMovementResponseSchema**](../Model/CharacterMovementResponseSchema.md)
 
 ### Authorization
 
@@ -1087,7 +1087,7 @@ try {
 ## `actionNpcBuyItemMyNameActionNpcBuyPost()`
 
 ```php
-actionNpcBuyItemMyNameActionNpcBuyPost($name, $npc_merchant_buy_schema): \\Kehet\ArtifactsMMO\\Model\NpcMerchantTransactionResponseSchema
+actionNpcBuyItemMyNameActionNpcBuyPost($name, $npc_merchant_buy_schema): \Kehet\ArtifactsMMO\Model\NpcMerchantTransactionResponseSchema
 ```
 
 Action Npc Buy Item
@@ -1102,17 +1102,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$npc_merchant_buy_schema = new \\Kehet\ArtifactsMMO\\Model\NpcMerchantBuySchema(); // \\Kehet\ArtifactsMMO\\Model\NpcMerchantBuySchema
+$npc_merchant_buy_schema = new \Kehet\ArtifactsMMO\Model\NpcMerchantBuySchema(); // \Kehet\ArtifactsMMO\Model\NpcMerchantBuySchema
 
 try {
     $result = $apiInstance->actionNpcBuyItemMyNameActionNpcBuyPost($name, $npc_merchant_buy_schema);
@@ -1127,11 +1127,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **npc_merchant_buy_schema** | [**\\Kehet\ArtifactsMMO\\Model\NpcMerchantBuySchema**](../Model/NpcMerchantBuySchema.md)|  | |
+| **npc_merchant_buy_schema** | [**\Kehet\ArtifactsMMO\Model\NpcMerchantBuySchema**](../Model/NpcMerchantBuySchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\NpcMerchantTransactionResponseSchema**](../Model/NpcMerchantTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\NpcMerchantTransactionResponseSchema**](../Model/NpcMerchantTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -1149,7 +1149,7 @@ try {
 ## `actionNpcSellItemMyNameActionNpcSellPost()`
 
 ```php
-actionNpcSellItemMyNameActionNpcSellPost($name, $npc_merchant_buy_schema): \\Kehet\ArtifactsMMO\\Model\NpcMerchantTransactionResponseSchema
+actionNpcSellItemMyNameActionNpcSellPost($name, $npc_merchant_buy_schema): \Kehet\ArtifactsMMO\Model\NpcMerchantTransactionResponseSchema
 ```
 
 Action Npc Sell Item
@@ -1164,17 +1164,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$npc_merchant_buy_schema = new \\Kehet\ArtifactsMMO\\Model\NpcMerchantBuySchema(); // \\Kehet\ArtifactsMMO\\Model\NpcMerchantBuySchema
+$npc_merchant_buy_schema = new \Kehet\ArtifactsMMO\Model\NpcMerchantBuySchema(); // \Kehet\ArtifactsMMO\Model\NpcMerchantBuySchema
 
 try {
     $result = $apiInstance->actionNpcSellItemMyNameActionNpcSellPost($name, $npc_merchant_buy_schema);
@@ -1189,11 +1189,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **npc_merchant_buy_schema** | [**\\Kehet\ArtifactsMMO\\Model\NpcMerchantBuySchema**](../Model/NpcMerchantBuySchema.md)|  | |
+| **npc_merchant_buy_schema** | [**\Kehet\ArtifactsMMO\Model\NpcMerchantBuySchema**](../Model/NpcMerchantBuySchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\NpcMerchantTransactionResponseSchema**](../Model/NpcMerchantTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\NpcMerchantTransactionResponseSchema**](../Model/NpcMerchantTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -1211,7 +1211,7 @@ try {
 ## `actionRecyclingMyNameActionRecyclingPost()`
 
 ```php
-actionRecyclingMyNameActionRecyclingPost($name, $recycling_schema): \\Kehet\ArtifactsMMO\\Model\RecyclingResponseSchema
+actionRecyclingMyNameActionRecyclingPost($name, $recycling_schema): \Kehet\ArtifactsMMO\Model\RecyclingResponseSchema
 ```
 
 Action Recycling
@@ -1226,17 +1226,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$recycling_schema = new \\Kehet\ArtifactsMMO\\Model\RecyclingSchema(); // \\Kehet\ArtifactsMMO\\Model\RecyclingSchema
+$recycling_schema = new \Kehet\ArtifactsMMO\Model\RecyclingSchema(); // \Kehet\ArtifactsMMO\Model\RecyclingSchema
 
 try {
     $result = $apiInstance->actionRecyclingMyNameActionRecyclingPost($name, $recycling_schema);
@@ -1251,11 +1251,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **recycling_schema** | [**\\Kehet\ArtifactsMMO\\Model\RecyclingSchema**](../Model/RecyclingSchema.md)|  | |
+| **recycling_schema** | [**\Kehet\ArtifactsMMO\Model\RecyclingSchema**](../Model/RecyclingSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\RecyclingResponseSchema**](../Model/RecyclingResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\RecyclingResponseSchema**](../Model/RecyclingResponseSchema.md)
 
 ### Authorization
 
@@ -1273,7 +1273,7 @@ try {
 ## `actionRestMyNameActionRestPost()`
 
 ```php
-actionRestMyNameActionRestPost($name): \\Kehet\ArtifactsMMO\\Model\CharacterRestResponseSchema
+actionRestMyNameActionRestPost($name): \Kehet\ArtifactsMMO\Model\CharacterRestResponseSchema
 ```
 
 Action Rest
@@ -1288,10 +1288,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1315,7 +1315,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharacterRestResponseSchema**](../Model/CharacterRestResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharacterRestResponseSchema**](../Model/CharacterRestResponseSchema.md)
 
 ### Authorization
 
@@ -1333,7 +1333,7 @@ try {
 ## `actionTaskCancelMyNameActionTaskCancelPost()`
 
 ```php
-actionTaskCancelMyNameActionTaskCancelPost($name): \\Kehet\ArtifactsMMO\\Model\TaskCancelledResponseSchema
+actionTaskCancelMyNameActionTaskCancelPost($name): \Kehet\ArtifactsMMO\Model\TaskCancelledResponseSchema
 ```
 
 Action Task Cancel
@@ -1348,10 +1348,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1375,7 +1375,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\TaskCancelledResponseSchema**](../Model/TaskCancelledResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\TaskCancelledResponseSchema**](../Model/TaskCancelledResponseSchema.md)
 
 ### Authorization
 
@@ -1393,7 +1393,7 @@ try {
 ## `actionTaskExchangeMyNameActionTaskExchangePost()`
 
 ```php
-actionTaskExchangeMyNameActionTaskExchangePost($name): \\Kehet\ArtifactsMMO\\Model\RewardDataResponseSchema
+actionTaskExchangeMyNameActionTaskExchangePost($name): \Kehet\ArtifactsMMO\Model\RewardDataResponseSchema
 ```
 
 Action Task Exchange
@@ -1408,10 +1408,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1435,7 +1435,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\RewardDataResponseSchema**](../Model/RewardDataResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\RewardDataResponseSchema**](../Model/RewardDataResponseSchema.md)
 
 ### Authorization
 
@@ -1453,7 +1453,7 @@ try {
 ## `actionTaskTradeMyNameActionTaskTradePost()`
 
 ```php
-actionTaskTradeMyNameActionTaskTradePost($name, $simple_item_schema): \\Kehet\ArtifactsMMO\\Model\TaskTradeResponseSchema
+actionTaskTradeMyNameActionTaskTradePost($name, $simple_item_schema): \Kehet\ArtifactsMMO\Model\TaskTradeResponseSchema
 ```
 
 Action Task Trade
@@ -1468,17 +1468,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$simple_item_schema = new \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema(); // \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema
+$simple_item_schema = new \Kehet\ArtifactsMMO\Model\SimpleItemSchema(); // \Kehet\ArtifactsMMO\Model\SimpleItemSchema
 
 try {
     $result = $apiInstance->actionTaskTradeMyNameActionTaskTradePost($name, $simple_item_schema);
@@ -1493,11 +1493,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **simple_item_schema** | [**\\Kehet\ArtifactsMMO\\Model\SimpleItemSchema**](../Model/SimpleItemSchema.md)|  | |
+| **simple_item_schema** | [**\Kehet\ArtifactsMMO\Model\SimpleItemSchema**](../Model/SimpleItemSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\TaskTradeResponseSchema**](../Model/TaskTradeResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\TaskTradeResponseSchema**](../Model/TaskTradeResponseSchema.md)
 
 ### Authorization
 
@@ -1515,7 +1515,7 @@ try {
 ## `actionTransitionMyNameActionTransitionPost()`
 
 ```php
-actionTransitionMyNameActionTransitionPost($name): \\Kehet\ArtifactsMMO\\Model\CharacterTransitionResponseSchema
+actionTransitionMyNameActionTransitionPost($name): \Kehet\ArtifactsMMO\Model\CharacterTransitionResponseSchema
 ```
 
 Action Transition
@@ -1530,10 +1530,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1557,7 +1557,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CharacterTransitionResponseSchema**](../Model/CharacterTransitionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CharacterTransitionResponseSchema**](../Model/CharacterTransitionResponseSchema.md)
 
 ### Authorization
 
@@ -1575,7 +1575,7 @@ try {
 ## `actionUnequipItemMyNameActionUnequipPost()`
 
 ```php
-actionUnequipItemMyNameActionUnequipPost($name, $unequip_schema): \\Kehet\ArtifactsMMO\\Model\EquipmentResponseSchema
+actionUnequipItemMyNameActionUnequipPost($name, $unequip_schema): \Kehet\ArtifactsMMO\Model\EquipmentResponseSchema
 ```
 
 Action Unequip Item
@@ -1590,17 +1590,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$unequip_schema = new \\Kehet\ArtifactsMMO\\Model\UnequipSchema(); // \\Kehet\ArtifactsMMO\\Model\UnequipSchema
+$unequip_schema = new \Kehet\ArtifactsMMO\Model\UnequipSchema(); // \Kehet\ArtifactsMMO\Model\UnequipSchema
 
 try {
     $result = $apiInstance->actionUnequipItemMyNameActionUnequipPost($name, $unequip_schema);
@@ -1615,11 +1615,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **unequip_schema** | [**\\Kehet\ArtifactsMMO\\Model\UnequipSchema**](../Model/UnequipSchema.md)|  | |
+| **unequip_schema** | [**\Kehet\ArtifactsMMO\Model\UnequipSchema**](../Model/UnequipSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\EquipmentResponseSchema**](../Model/EquipmentResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\EquipmentResponseSchema**](../Model/EquipmentResponseSchema.md)
 
 ### Authorization
 
@@ -1637,7 +1637,7 @@ try {
 ## `actionUseItemMyNameActionUsePost()`
 
 ```php
-actionUseItemMyNameActionUsePost($name, $simple_item_schema): \\Kehet\ArtifactsMMO\\Model\UseItemResponseSchema
+actionUseItemMyNameActionUsePost($name, $simple_item_schema): \Kehet\ArtifactsMMO\Model\UseItemResponseSchema
 ```
 
 Action Use Item
@@ -1652,17 +1652,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$simple_item_schema = new \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema(); // \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema
+$simple_item_schema = new \Kehet\ArtifactsMMO\Model\SimpleItemSchema(); // \Kehet\ArtifactsMMO\Model\SimpleItemSchema
 
 try {
     $result = $apiInstance->actionUseItemMyNameActionUsePost($name, $simple_item_schema);
@@ -1677,11 +1677,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **simple_item_schema** | [**\\Kehet\ArtifactsMMO\\Model\SimpleItemSchema**](../Model/SimpleItemSchema.md)|  | |
+| **simple_item_schema** | [**\Kehet\ArtifactsMMO\Model\SimpleItemSchema**](../Model/SimpleItemSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\UseItemResponseSchema**](../Model/UseItemResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\UseItemResponseSchema**](../Model/UseItemResponseSchema.md)
 
 ### Authorization
 
@@ -1699,7 +1699,7 @@ try {
 ## `actionWithdrawBankGoldMyNameActionBankWithdrawGoldPost()`
 
 ```php
-actionWithdrawBankGoldMyNameActionBankWithdrawGoldPost($name, $deposit_withdraw_gold_schema): \\Kehet\ArtifactsMMO\\Model\BankGoldTransactionResponseSchema
+actionWithdrawBankGoldMyNameActionBankWithdrawGoldPost($name, $deposit_withdraw_gold_schema): \Kehet\ArtifactsMMO\Model\BankGoldTransactionResponseSchema
 ```
 
 Action Withdraw Bank Gold
@@ -1714,17 +1714,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$deposit_withdraw_gold_schema = new \\Kehet\ArtifactsMMO\\Model\DepositWithdrawGoldSchema(); // \\Kehet\ArtifactsMMO\\Model\DepositWithdrawGoldSchema
+$deposit_withdraw_gold_schema = new \Kehet\ArtifactsMMO\Model\DepositWithdrawGoldSchema(); // \Kehet\ArtifactsMMO\Model\DepositWithdrawGoldSchema
 
 try {
     $result = $apiInstance->actionWithdrawBankGoldMyNameActionBankWithdrawGoldPost($name, $deposit_withdraw_gold_schema);
@@ -1739,11 +1739,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **deposit_withdraw_gold_schema** | [**\\Kehet\ArtifactsMMO\\Model\DepositWithdrawGoldSchema**](../Model/DepositWithdrawGoldSchema.md)|  | |
+| **deposit_withdraw_gold_schema** | [**\Kehet\ArtifactsMMO\Model\DepositWithdrawGoldSchema**](../Model/DepositWithdrawGoldSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\BankGoldTransactionResponseSchema**](../Model/BankGoldTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\BankGoldTransactionResponseSchema**](../Model/BankGoldTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -1761,7 +1761,7 @@ try {
 ## `actionWithdrawBankItemMyNameActionBankWithdrawItemPost()`
 
 ```php
-actionWithdrawBankItemMyNameActionBankWithdrawItemPost($name, $simple_item_schema): \\Kehet\ArtifactsMMO\\Model\BankItemTransactionResponseSchema
+actionWithdrawBankItemMyNameActionBankWithdrawItemPost($name, $simple_item_schema): \Kehet\ArtifactsMMO\Model\BankItemTransactionResponseSchema
 ```
 
 Action Withdraw Bank Item
@@ -1776,17 +1776,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $name = 'name_example'; // string | Name of your character.
-$simple_item_schema = array(new \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema()); // \\Kehet\ArtifactsMMO\\Model\SimpleItemSchema[]
+$simple_item_schema = array(new \Kehet\ArtifactsMMO\Model\SimpleItemSchema()); // \Kehet\ArtifactsMMO\Model\SimpleItemSchema[]
 
 try {
     $result = $apiInstance->actionWithdrawBankItemMyNameActionBankWithdrawItemPost($name, $simple_item_schema);
@@ -1801,11 +1801,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| Name of your character. | |
-| **simple_item_schema** | [**\\Kehet\ArtifactsMMO\\Model\SimpleItemSchema[]**](../Model/SimpleItemSchema.md)|  | |
+| **simple_item_schema** | [**\Kehet\ArtifactsMMO\Model\SimpleItemSchema[]**](../Model/SimpleItemSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\BankItemTransactionResponseSchema**](../Model/BankItemTransactionResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\BankItemTransactionResponseSchema**](../Model/BankItemTransactionResponseSchema.md)
 
 ### Authorization
 
@@ -1823,7 +1823,7 @@ try {
 ## `getAllCharactersLogsMyLogsGet()`
 
 ```php
-getAllCharactersLogsMyLogsGet($page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageLogSchema
+getAllCharactersLogsMyLogsGet($page, $size): \Kehet\ArtifactsMMO\Model\DataPageLogSchema
 ```
 
 Get All Characters Logs
@@ -1838,10 +1838,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1867,7 +1867,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageLogSchema**](../Model/DataPageLogSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageLogSchema**](../Model/DataPageLogSchema.md)
 
 ### Authorization
 
@@ -1885,7 +1885,7 @@ try {
 ## `getCharacterLogsMyLogsNameGet()`
 
 ```php
-getCharacterLogsMyLogsNameGet($name, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageLogSchema
+getCharacterLogsMyLogsNameGet($name, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageLogSchema
 ```
 
 Get Character Logs
@@ -1900,10 +1900,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1931,7 +1931,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageLogSchema**](../Model/DataPageLogSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageLogSchema**](../Model/DataPageLogSchema.md)
 
 ### Authorization
 
@@ -1949,7 +1949,7 @@ try {
 ## `getMyCharactersMyCharactersGet()`
 
 ```php
-getMyCharactersMyCharactersGet(): \\Kehet\ArtifactsMMO\\Model\MyCharactersListSchema
+getMyCharactersMyCharactersGet(): \Kehet\ArtifactsMMO\Model\MyCharactersListSchema
 ```
 
 Get My Characters
@@ -1964,10 +1964,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyCharactersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyCharactersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1988,7 +1988,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\MyCharactersListSchema**](../Model/MyCharactersListSchema.md)
+[**\Kehet\ArtifactsMMO\Model\MyCharactersListSchema**](../Model/MyCharactersListSchema.md)
 
 ### Authorization
 

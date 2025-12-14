@@ -1,5 +1,10 @@
-# OpenAPIClient-php
+# Artifacts MMO API Client for PHP
 
+This is automatically generated API client for Artifacts MMO. The code is completely based on [OpenAPI Generator](https://openapi-generator.tech) project and is thus untested.
+
+Version numbering should reflect version of the API.
+
+--- 
 
 Artifacts is an API-based MMO game where you can manage 5 characters to explore, fight, gather resources, craft items and much more.
 
@@ -9,60 +14,31 @@ Documentation: https://docs.artifactsmmo.com/
 
 OpenAPI Spec: https://api.artifactsmmo.com/openapi.json
 
-
-
-## Installation & Usage
-
-### Requirements
+## Requirements
 
 PHP 8.1 and later.
 
-### Composer
+## Installation
 
-To install the bindings via [Composer](https://getcomposer.org/), add the following to `composer.json`:
+You can install the package via composer:
 
-```json
-{
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
-    }
-  ],
-  "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
-  }
-}
 ```
-
-Then run `composer install`
-
-### Manual Installation
-
-Download the files and include `autoload.php`:
-
-```php
-<?php
-require_once('/path/to/OpenAPIClient-php/vendor/autoload.php');
+composer require kehet/artifactsmmo-client
 ```
 
 ## Getting Started
 
-Please follow the [installation procedure](#installation--usage) and then run the following:
-
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
-
-
-
 
 $apiInstance = new \Kehet\ArtifactsMMO\\Api\AccountsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$add_account_schema = new \\Kehet\ArtifactsMMO\\Model\AddAccountSchema(); // \\Kehet\ArtifactsMMO\\Model\AddAccountSchema
+
+$add_account_schema = new \Kehet\ArtifactsMMO\Model\AddAccountSchema(); // \\Kehet\ArtifactsMMO\\Model\AddAccountSchema
 
 try {
     $result = $apiInstance->createAccountAccountsCreatePost($add_account_schema);
@@ -70,7 +46,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling AccountsApi->createAccountAccountsCreatePost: ', $e->getMessage(), PHP_EOL;
 }
-
 ```
 
 ## API Endpoints
@@ -382,10 +357,6 @@ To run the tests, use:
 composer install
 vendor/bin/phpunit
 ```
-
-## Author
-
-
 
 ## About this package
 

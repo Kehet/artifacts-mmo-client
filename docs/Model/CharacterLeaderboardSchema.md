@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **position** | **int** | Position in the leaderboard. |
 **name** | **string** | Character name. |
 **account** | **string** | Account name. |
-**status** | [**\\Kehet\ArtifactsMMO\\Model\AccountStatus**](AccountStatus.md) | Member status. |
+**status** | [**\Kehet\ArtifactsMMO\Model\AccountStatus**](AccountStatus.md) | Member status. |
 **skin** | **string** | Character skin code. |
 **level** | **int** | Combat level. |
 **total_xp** | **int** | Total XP of your character. |

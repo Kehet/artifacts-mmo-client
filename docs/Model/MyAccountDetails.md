@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **email** | **string** | Email. |
 **member** | **bool** | Member status. |
 **member_expiration** | **\DateTime** | Member expiration date. | [optional]
-**status** | [**\\Kehet\ArtifactsMMO\\Model\AccountStatus**](AccountStatus.md) | Account status. |
+**status** | [**\Kehet\ArtifactsMMO\Model\AccountStatus**](AccountStatus.md) | Account status. |
 **badges** | **string[]** | Account badges. | [optional]
 **skins** | **string[]** | Skins owned. |
 **gems** | **int** | Gems. |

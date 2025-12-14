@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\EffectsApi
+# Kehet\ArtifactsMMO\EffectsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllEffectsEffectsGet()`
 
 ```php
-getAllEffectsEffectsGet($page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageEffectSchema
+getAllEffectsEffectsGet($page, $size): \Kehet\ArtifactsMMO\Model\DataPageEffectSchema
 ```
 
 Get All Effects
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\EffectsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\EffectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageEffectSchema**](../Model/DataPageEffectSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageEffectSchema**](../Model/DataPageEffectSchema.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `getEffectEffectsCodeGet()`
 
 ```php
-getEffectEffectsCodeGet($code): \\Kehet\ArtifactsMMO\\Model\EffectResponseSchema
+getEffectEffectsCodeGet($code): \Kehet\ArtifactsMMO\Model\EffectResponseSchema
 ```
 
 Get Effect
@@ -84,7 +84,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\EffectsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\EffectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\EffectResponseSchema**](../Model/EffectResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\EffectResponseSchema**](../Model/EffectResponseSchema.md)
 
 ### Authorization
 

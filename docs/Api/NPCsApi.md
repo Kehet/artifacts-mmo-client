@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\NPCsApi
+# Kehet\ArtifactsMMO\NPCsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllNpcsItemsNpcsItemsGet()`
 
 ```php
-getAllNpcsItemsNpcsItemsGet($code, $npc, $currency, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageNPCItem
+getAllNpcsItemsNpcsItemsGet($code, $npc, $currency, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageNPCItem
 ```
 
 Get All Npcs Items
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\NPCsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\NPCsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -59,7 +59,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageNPCItem**](../Model/DataPageNPCItem.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageNPCItem**](../Model/DataPageNPCItem.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ No authorization required
 ## `getAllNpcsNpcsDetailsGet()`
 
 ```php
-getAllNpcsNpcsDetailsGet($name, $type, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageNPCSchema
+getAllNpcsNpcsDetailsGet($name, $type, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageNPCSchema
 ```
 
 Get All Npcs
@@ -92,13 +92,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\NPCsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\NPCsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $name = 'name_example'; // string | NPC name.
-$type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelNPCType(); // \\KehetArtifactsMMO\ModelNPCType | Type of NPCs.
+$type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelNPCType(); // \KehetArtifactsMMOModelNPCType | Type of NPCs.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
 
@@ -115,13 +115,13 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **name** | **string**| NPC name. | [optional] |
-| **type** | [**\\KehetArtifactsMMO\ModelNPCType**](../Model/.md)| Type of NPCs. | [optional] |
+| **type** | [**\KehetArtifactsMMOModelNPCType**](../Model/.md)| Type of NPCs. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageNPCSchema**](../Model/DataPageNPCSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageNPCSchema**](../Model/DataPageNPCSchema.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ No authorization required
 ## `getNpcItemsNpcsItemsCodeGet()`
 
 ```php
-getNpcItemsNpcsItemsCodeGet($code, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageNPCItem
+getNpcItemsNpcsItemsCodeGet($code, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageNPCItem
 ```
 
 Get Npc Items
@@ -154,7 +154,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\NPCsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\NPCsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageNPCItem**](../Model/DataPageNPCItem.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageNPCItem**](../Model/DataPageNPCItem.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ No authorization required
 ## `getNpcNpcsDetailsCodeGet()`
 
 ```php
-getNpcNpcsDetailsCodeGet($code): \\Kehet\ArtifactsMMO\\Model\NPCResponseSchema
+getNpcNpcsDetailsCodeGet($code): \Kehet\ArtifactsMMO\Model\NPCResponseSchema
 ```
 
 Get Npc
@@ -214,7 +214,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\NPCsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\NPCsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -237,7 +237,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\NPCResponseSchema**](../Model/NPCResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\NPCResponseSchema**](../Model/NPCResponseSchema.md)
 
 ### Authorization
 

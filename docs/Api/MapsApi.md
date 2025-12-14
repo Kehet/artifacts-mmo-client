@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\MapsApi
+# Kehet\ArtifactsMMO\MapsApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllMapsMapsGet()`
 
 ```php
-getAllMapsMapsGet($layer, $content_type, $content_code, $hide_blocked_maps, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageMapSchema
+getAllMapsMapsGet($layer, $content_type, $content_code, $hide_blocked_maps, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageMapSchema
 ```
 
 Get All Maps
@@ -28,13 +28,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MapsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MapsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$layer = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelMapLayer(); // \\KehetArtifactsMMO\ModelMapLayer | Filter maps by layer.
-$content_type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelMapContentType(); // \\KehetArtifactsMMO\ModelMapContentType | Type of maps.
+$layer = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelMapLayer(); // \KehetArtifactsMMOModelMapLayer | Filter maps by layer.
+$content_type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelMapContentType(); // \KehetArtifactsMMOModelMapContentType | Type of maps.
 $content_code = 'content_code_example'; // string | Content code on the map.
 $hide_blocked_maps = false; // bool | When true, excludes maps with access_type 'blocked' from the results.
 $page = 1; // int | Page number
@@ -52,8 +52,8 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **layer** | [**\\KehetArtifactsMMO\ModelMapLayer**](../Model/.md)| Filter maps by layer. | [optional] |
-| **content_type** | [**\\KehetArtifactsMMO\ModelMapContentType**](../Model/.md)| Type of maps. | [optional] |
+| **layer** | [**\KehetArtifactsMMOModelMapLayer**](../Model/.md)| Filter maps by layer. | [optional] |
+| **content_type** | [**\KehetArtifactsMMOModelMapContentType**](../Model/.md)| Type of maps. | [optional] |
 | **content_code** | **string**| Content code on the map. | [optional] |
 | **hide_blocked_maps** | **bool**| When true, excludes maps with access_type &#39;blocked&#39; from the results. | [optional] [default to false] |
 | **page** | **int**| Page number | [optional] [default to 1] |
@@ -61,7 +61,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageMapSchema**](../Model/DataPageMapSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageMapSchema**](../Model/DataPageMapSchema.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ No authorization required
 ## `getLayerMapsMapsLayerGet()`
 
 ```php
-getLayerMapsMapsLayerGet($layer, $content_type, $content_code, $hide_blocked_maps, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageMapSchema
+getLayerMapsMapsLayerGet($layer, $content_type, $content_code, $hide_blocked_maps, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageMapSchema
 ```
 
 Get Layer Maps
@@ -94,13 +94,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MapsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MapsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$layer = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelMapLayer(); // \\KehetArtifactsMMO\ModelMapLayer | The layer of the map (interior, overworld, underground).
-$content_type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelMapContentType(); // \\KehetArtifactsMMO\ModelMapContentType | Type of maps.
+$layer = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelMapLayer(); // \KehetArtifactsMMOModelMapLayer | The layer of the map (interior, overworld, underground).
+$content_type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelMapContentType(); // \KehetArtifactsMMOModelMapContentType | Type of maps.
 $content_code = 'content_code_example'; // string | Content code on the map.
 $hide_blocked_maps = false; // bool | When true, excludes maps with access_type 'blocked' from the results.
 $page = 1; // int | Page number
@@ -118,8 +118,8 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **layer** | [**\\KehetArtifactsMMO\ModelMapLayer**](../Model/.md)| The layer of the map (interior, overworld, underground). | |
-| **content_type** | [**\\KehetArtifactsMMO\ModelMapContentType**](../Model/.md)| Type of maps. | [optional] |
+| **layer** | [**\KehetArtifactsMMOModelMapLayer**](../Model/.md)| The layer of the map (interior, overworld, underground). | |
+| **content_type** | [**\KehetArtifactsMMOModelMapContentType**](../Model/.md)| Type of maps. | [optional] |
 | **content_code** | **string**| Content code on the map. | [optional] |
 | **hide_blocked_maps** | **bool**| When true, excludes maps with access_type &#39;blocked&#39; from the results. | [optional] [default to false] |
 | **page** | **int**| Page number | [optional] [default to 1] |
@@ -127,7 +127,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageMapSchema**](../Model/DataPageMapSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageMapSchema**](../Model/DataPageMapSchema.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ No authorization required
 ## `getMapByIdMapsIdMapIdGet()`
 
 ```php
-getMapByIdMapsIdMapIdGet($map_id): \\Kehet\ArtifactsMMO\\Model\MapResponseSchema
+getMapByIdMapsIdMapIdGet($map_id): \Kehet\ArtifactsMMO\Model\MapResponseSchema
 ```
 
 Get Map By Id
@@ -160,7 +160,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MapsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MapsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\MapResponseSchema**](../Model/MapResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\MapResponseSchema**](../Model/MapResponseSchema.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ No authorization required
 ## `getMapByPositionMapsLayerXYGet()`
 
 ```php
-getMapByPositionMapsLayerXYGet($layer, $x, $y): \\Kehet\ArtifactsMMO\\Model\MapResponseSchema
+getMapByPositionMapsLayerXYGet($layer, $x, $y): \Kehet\ArtifactsMMO\Model\MapResponseSchema
 ```
 
 Get Map By Position
@@ -216,12 +216,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MapsApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MapsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$layer = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelMapLayer(); // \\KehetArtifactsMMO\ModelMapLayer | The layer of the map (interior, overworld, underground).
+$layer = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelMapLayer(); // \KehetArtifactsMMOModelMapLayer | The layer of the map (interior, overworld, underground).
 $x = 56; // int | The position x of the map.
 $y = 56; // int | The position y of the map.
 
@@ -237,13 +237,13 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **layer** | [**\\KehetArtifactsMMO\ModelMapLayer**](../Model/.md)| The layer of the map (interior, overworld, underground). | |
+| **layer** | [**\KehetArtifactsMMOModelMapLayer**](../Model/.md)| The layer of the map (interior, overworld, underground). | |
 | **x** | **int**| The position x of the map. | |
 | **y** | **int**| The position y of the map. | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\MapResponseSchema**](../Model/MapResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\MapResponseSchema**](../Model/MapResponseSchema.md)
 
 ### Authorization
 

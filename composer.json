@@ -32,10 +32,10 @@
         "phpunit/phpunit": "^9.0"
     },
     "autoload": {
-        "psr-4": { "\\Kehet\\ArtifactsMMO\\\\" : "src/" }
+        "psr-4": { "Kehet\\ArtifactsMMO\\" : "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "\\Kehet\\ArtifactsMMO\\\\Test\\" : "tests/" }
+        "psr-4": { "Kehet\\ArtifactsMMO\\Test\\" : "tests/" }
     },
     "scripts": {
         "test": [

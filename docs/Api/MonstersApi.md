@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\MonstersApi
+# Kehet\ArtifactsMMO\MonstersApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllMonstersMonstersGet()`
 
 ```php
-getAllMonstersMonstersGet($name, $min_level, $max_level, $drop, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageMonsterSchema
+getAllMonstersMonstersGet($name, $min_level, $max_level, $drop, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageMonsterSchema
 ```
 
 Get All Monsters
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MonstersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MonstersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -59,7 +59,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageMonsterSchema**](../Model/DataPageMonsterSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageMonsterSchema**](../Model/DataPageMonsterSchema.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ No authorization required
 ## `getMonsterMonstersCodeGet()`
 
 ```php
-getMonsterMonstersCodeGet($code): \\Kehet\ArtifactsMMO\\Model\MonsterResponseSchema
+getMonsterMonstersCodeGet($code): \Kehet\ArtifactsMMO\Model\MonsterResponseSchema
 ```
 
 Get Monster
@@ -92,7 +92,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MonstersApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MonstersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -115,7 +115,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\MonsterResponseSchema**](../Model/MonsterResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\MonsterResponseSchema**](../Model/MonsterResponseSchema.md)
 
 ### Authorization
 

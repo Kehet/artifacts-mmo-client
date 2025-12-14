@@ -1,9 +1,7 @@
 .gitignore
-.openapi-generator-ignore
 .php-cs-fixer.dist.php
 .phplint.yml
 .travis.yml
-README.md
 composer.json
 docs/Api/AccountsApi.md
 docs/Api/AchievementsApi.md

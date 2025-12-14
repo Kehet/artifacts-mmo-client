@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\\Kehet\ArtifactsMMO\\Model\SimpleItemSchema[]**](SimpleItemSchema.md) |  |
+**data** | [**\Kehet\ArtifactsMMO\Model\SimpleItemSchema[]**](SimpleItemSchema.md) |  |
 **total** | **int** |  | [optional]
 **page** | **int** |  | [optional]
 **size** | **int** |  | [optional]

@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\GrandExchangeApi
+# Kehet\ArtifactsMMO\GrandExchangeApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getGeSellHistoryGrandexchangeHistoryCodeGet()`
 
 ```php
-getGeSellHistoryGrandexchangeHistoryCodeGet($code, $seller, $buyer, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageGeOrderHistorySchema
+getGeSellHistoryGrandexchangeHistoryCodeGet($code, $seller, $buyer, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageGeOrderHistorySchema
 ```
 
 Get Ge Sell History
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\GrandExchangeApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\GrandExchangeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -58,7 +58,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageGeOrderHistorySchema**](../Model/DataPageGeOrderHistorySchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageGeOrderHistorySchema**](../Model/DataPageGeOrderHistorySchema.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ No authorization required
 ## `getGeSellOrderGrandexchangeOrdersIdGet()`
 
 ```php
-getGeSellOrderGrandexchangeOrdersIdGet($id): \\Kehet\ArtifactsMMO\\Model\GEOrderResponseSchema
+getGeSellOrderGrandexchangeOrdersIdGet($id): \Kehet\ArtifactsMMO\Model\GEOrderResponseSchema
 ```
 
 Get Ge Sell Order
@@ -91,7 +91,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\GrandExchangeApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\GrandExchangeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\GEOrderResponseSchema**](../Model/GEOrderResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\GEOrderResponseSchema**](../Model/GEOrderResponseSchema.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 ## `getGeSellOrdersGrandexchangeOrdersGet()`
 
 ```php
-getGeSellOrdersGrandexchangeOrdersGet($code, $seller, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageGEOrderSchema
+getGeSellOrdersGrandexchangeOrdersGet($code, $seller, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageGEOrderSchema
 ```
 
 Get Ge Sell Orders
@@ -147,7 +147,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\GrandExchangeApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\GrandExchangeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -176,7 +176,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageGEOrderSchema**](../Model/DataPageGEOrderSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageGEOrderSchema**](../Model/DataPageGEOrderSchema.md)
 
 ### Authorization
 

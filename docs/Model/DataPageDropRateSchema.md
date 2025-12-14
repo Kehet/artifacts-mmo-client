@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\\Kehet\ArtifactsMMO\\Model\DropRateSchema[]**](DropRateSchema.md) |  |
+**data** | [**\Kehet\ArtifactsMMO\Model\DropRateSchema[]**](DropRateSchema.md) |  |
 **total** | **int** |  | [optional]
 **page** | **int** |  | [optional]
 **size** | **int** |  | [optional]

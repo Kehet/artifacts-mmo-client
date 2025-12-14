@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\SimulationApi
+# Kehet\ArtifactsMMO\SimulationApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `fightSimulationSimulationFightSimulationPost()`
 
 ```php
-fightSimulationSimulationFightSimulationPost($combat_simulation_request_schema): \\Kehet\ArtifactsMMO\\Model\CombatSimulationResponseSchema
+fightSimulationSimulationFightSimulationPost($combat_simulation_request_schema): \Kehet\ArtifactsMMO\Model\CombatSimulationResponseSchema
 ```
 
 Fight Simulation
@@ -25,16 +25,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\SimulationApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\SimulationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$combat_simulation_request_schema = new \\Kehet\ArtifactsMMO\\Model\CombatSimulationRequestSchema(); // \\Kehet\ArtifactsMMO\\Model\CombatSimulationRequestSchema
+$combat_simulation_request_schema = new \Kehet\ArtifactsMMO\Model\CombatSimulationRequestSchema(); // \Kehet\ArtifactsMMO\Model\CombatSimulationRequestSchema
 
 try {
     $result = $apiInstance->fightSimulationSimulationFightSimulationPost($combat_simulation_request_schema);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **combat_simulation_request_schema** | [**\\Kehet\ArtifactsMMO\\Model\CombatSimulationRequestSchema**](../Model/CombatSimulationRequestSchema.md)|  | |
+| **combat_simulation_request_schema** | [**\Kehet\ArtifactsMMO\Model\CombatSimulationRequestSchema**](../Model/CombatSimulationRequestSchema.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\CombatSimulationResponseSchema**](../Model/CombatSimulationResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\CombatSimulationResponseSchema**](../Model/CombatSimulationResponseSchema.md)
 
 ### Authorization
 

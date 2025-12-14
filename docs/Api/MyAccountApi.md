@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\MyAccountApi
+# Kehet\ArtifactsMMO\MyAccountApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `changePasswordMyChangePasswordPost()`
 
 ```php
-changePasswordMyChangePasswordPost($change_password): \\Kehet\ArtifactsMMO\\Model\ResponseSchema
+changePasswordMyChangePasswordPost($change_password): \Kehet\ArtifactsMMO\Model\ResponseSchema
 ```
 
 Change Password
@@ -30,16 +30,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyAccountApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$change_password = new \\Kehet\ArtifactsMMO\\Model\ChangePassword(); // \\Kehet\ArtifactsMMO\\Model\ChangePassword
+$change_password = new \Kehet\ArtifactsMMO\Model\ChangePassword(); // \Kehet\ArtifactsMMO\Model\ChangePassword
 
 try {
     $result = $apiInstance->changePasswordMyChangePasswordPost($change_password);
@@ -53,11 +53,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **change_password** | [**\\Kehet\ArtifactsMMO\\Model\ChangePassword**](../Model/ChangePassword.md)|  | |
+| **change_password** | [**\Kehet\ArtifactsMMO\Model\ChangePassword**](../Model/ChangePassword.md)|  | |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\ResponseSchema**](../Model/ResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\ResponseSchema**](../Model/ResponseSchema.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ try {
 ## `getAccountDetailsMyDetailsGet()`
 
 ```php
-getAccountDetailsMyDetailsGet(): \\Kehet\ArtifactsMMO\\Model\MyAccountDetailsSchema
+getAccountDetailsMyDetailsGet(): \Kehet\ArtifactsMMO\Model\MyAccountDetailsSchema
 ```
 
 Get Account Details
@@ -90,10 +90,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyAccountApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\MyAccountDetailsSchema**](../Model/MyAccountDetailsSchema.md)
+[**\Kehet\ArtifactsMMO\Model\MyAccountDetailsSchema**](../Model/MyAccountDetailsSchema.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ This endpoint does not need any parameter.
 ## `getBankDetailsMyBankGet()`
 
 ```php
-getBankDetailsMyBankGet(): \\Kehet\ArtifactsMMO\\Model\BankResponseSchema
+getBankDetailsMyBankGet(): \Kehet\ArtifactsMMO\Model\BankResponseSchema
 ```
 
 Get Bank Details
@@ -147,10 +147,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyAccountApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -171,7 +171,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\BankResponseSchema**](../Model/BankResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\BankResponseSchema**](../Model/BankResponseSchema.md)
 
 ### Authorization
 
@@ -189,7 +189,7 @@ This endpoint does not need any parameter.
 ## `getBankItemsMyBankItemsGet()`
 
 ```php
-getBankItemsMyBankItemsGet($item_code, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageSimpleItemSchema
+getBankItemsMyBankItemsGet($item_code, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageSimpleItemSchema
 ```
 
 Get Bank Items
@@ -204,10 +204,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyAccountApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -235,7 +235,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageSimpleItemSchema**](../Model/DataPageSimpleItemSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageSimpleItemSchema**](../Model/DataPageSimpleItemSchema.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ try {
 ## `getGeSellHistoryMyGrandexchangeHistoryGet()`
 
 ```php
-getGeSellHistoryMyGrandexchangeHistoryGet($id, $code, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageGeOrderHistorySchema
+getGeSellHistoryMyGrandexchangeHistoryGet($id, $code, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageGeOrderHistorySchema
 ```
 
 Get Ge Sell History
@@ -268,10 +268,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyAccountApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -301,7 +301,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageGeOrderHistorySchema**](../Model/DataPageGeOrderHistorySchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageGeOrderHistorySchema**](../Model/DataPageGeOrderHistorySchema.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ try {
 ## `getGeSellOrdersMyGrandexchangeOrdersGet()`
 
 ```php
-getGeSellOrdersMyGrandexchangeOrdersGet($code, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageGEOrderSchema
+getGeSellOrdersMyGrandexchangeOrdersGet($code, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageGEOrderSchema
 ```
 
 Get Ge Sell Orders
@@ -334,10 +334,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: JWTBearer
-$config = \Kehet\ArtifactsMMO\\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Kehet\ArtifactsMMO\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\MyAccountApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\MyAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -365,7 +365,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageGEOrderSchema**](../Model/DataPageGEOrderSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageGEOrderSchema**](../Model/DataPageGEOrderSchema.md)
 
 ### Authorization
 

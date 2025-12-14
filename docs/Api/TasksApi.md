@@ -1,4 +1,4 @@
-# \Kehet\ArtifactsMMO\\TasksApi
+# Kehet\ArtifactsMMO\TasksApi
 
 All URIs are relative to http://localhost, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to http://localhost, except if the operation defines anoth
 ## `getAllTasksRewardsTasksRewardsGet()`
 
 ```php
-getAllTasksRewardsTasksRewardsGet($page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageDropRateSchema
+getAllTasksRewardsTasksRewardsGet($page, $size): \Kehet\ArtifactsMMO\Model\DataPageDropRateSchema
 ```
 
 Get All Tasks Rewards
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\TasksApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageDropRateSchema**](../Model/DataPageDropRateSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageDropRateSchema**](../Model/DataPageDropRateSchema.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `getAllTasksTasksListGet()`
 
 ```php
-getAllTasksTasksListGet($min_level, $max_level, $skill, $type, $page, $size): \\Kehet\ArtifactsMMO\\Model\DataPageTaskFullSchema
+getAllTasksTasksListGet($min_level, $max_level, $skill, $type, $page, $size): \Kehet\ArtifactsMMO\Model\DataPageTaskFullSchema
 ```
 
 Get All Tasks
@@ -86,15 +86,15 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\TasksApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $min_level = 56; // int | Minimum level.
 $max_level = 56; // int | Maximum level.
-$skill = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelSkill(); // \\KehetArtifactsMMO\ModelSkill | Skill of tasks.
-$type = new \\Kehet\ArtifactsMMO\\Model\\\KehetArtifactsMMO\ModelTaskType(); // \\KehetArtifactsMMO\ModelTaskType | Type of tasks.
+$skill = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelSkill(); // \KehetArtifactsMMOModelSkill | Skill of tasks.
+$type = new \Kehet\ArtifactsMMO\Model\\KehetArtifactsMMOModelTaskType(); // \KehetArtifactsMMOModelTaskType | Type of tasks.
 $page = 1; // int | Page number
 $size = 50; // int | Page size
 
@@ -112,14 +112,14 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **min_level** | **int**| Minimum level. | [optional] |
 | **max_level** | **int**| Maximum level. | [optional] |
-| **skill** | [**\\KehetArtifactsMMO\ModelSkill**](../Model/.md)| Skill of tasks. | [optional] |
-| **type** | [**\\KehetArtifactsMMO\ModelTaskType**](../Model/.md)| Type of tasks. | [optional] |
+| **skill** | [**\KehetArtifactsMMOModelSkill**](../Model/.md)| Skill of tasks. | [optional] |
+| **type** | [**\KehetArtifactsMMOModelTaskType**](../Model/.md)| Type of tasks. | [optional] |
 | **page** | **int**| Page number | [optional] [default to 1] |
 | **size** | **int**| Page size | [optional] [default to 50] |
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\DataPageTaskFullSchema**](../Model/DataPageTaskFullSchema.md)
+[**\Kehet\ArtifactsMMO\Model\DataPageTaskFullSchema**](../Model/DataPageTaskFullSchema.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ No authorization required
 ## `getTaskTasksListCodeGet()`
 
 ```php
-getTaskTasksListCodeGet($code): \\Kehet\ArtifactsMMO\\Model\TaskFullResponseSchema
+getTaskTasksListCodeGet($code): \Kehet\ArtifactsMMO\Model\TaskFullResponseSchema
 ```
 
 Get Task
@@ -152,7 +152,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\TasksApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -175,7 +175,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\TaskFullResponseSchema**](../Model/TaskFullResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\TaskFullResponseSchema**](../Model/TaskFullResponseSchema.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 ## `getTasksRewardTasksRewardsCodeGet()`
 
 ```php
-getTasksRewardTasksRewardsCodeGet($code): \\Kehet\ArtifactsMMO\\Model\RewardResponseSchema
+getTasksRewardTasksRewardsCodeGet($code): \Kehet\ArtifactsMMO\Model\RewardResponseSchema
 ```
 
 Get Tasks Reward
@@ -208,7 +208,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new \Kehet\ArtifactsMMO\\Api\TasksApi(
+$apiInstance = new Kehet\ArtifactsMMO\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -231,7 +231,7 @@ try {
 
 ### Return type
 
-[**\\Kehet\ArtifactsMMO\\Model\RewardResponseSchema**](../Model/RewardResponseSchema.md)
+[**\Kehet\ArtifactsMMO\Model\RewardResponseSchema**](../Model/RewardResponseSchema.md)
 
 ### Authorization
 
